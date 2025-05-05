@@ -2,8 +2,13 @@
   "HomePage": {
     "title": "Willkommen bei YoPrint Anime",
     "description": "Ihre progressive Web-App für Anime-Inhalte",
-    "about": "Zur About-Seite",
+    "about": "Gehe zur Über-Seite",
     "deploy": "Jetzt bereitstellen",
-    "readDocs": "Dokumentation lesen"
+    "readDocs": "Lesen Sie unsere Dokumentation",
+    "searchPlaceholder": "Nach Anime suchen..."
+  },
+  "Navbar": {
+    "home": "Startseite",
+    "about": "Über uns"
   }
 }

@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import ThemeRegistry from "@/components/ThemeRegistry";
+import Navbar from "@/components/Navbar";
 import "../globals.css";
 
 const geistSans = Geist({
@@ -37,10 +39,13 @@ export default async function LocaleRootLayout({
   const messages = (await import(`../../../locale/${locale}.json`)).default;
 
   return (
-    <html lang={locale}>
+    <html lang={locale} className='light'>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <ThemeRegistry>
+            <Navbar />
+            <main>{children}</main>
+          </ThemeRegistry>
         </NextIntlClientProvider>
       </body>
     </html>
