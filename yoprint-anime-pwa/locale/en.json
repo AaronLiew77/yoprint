@@ -4,6 +4,11 @@
     "description": "Your progressive web app for anime content",
     "about": "Go to the about page",
     "deploy": "Deploy now",
-    "readDocs": "Read our docs"
+    "readDocs": "Read our docs",
+    "searchPlaceholder": "Search for anime..."
+  },
+  "Navbar": {
+    "home": "Home",
+    "about": "About"
   }
 }
